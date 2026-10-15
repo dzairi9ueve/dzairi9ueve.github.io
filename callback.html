@@ -1,0 +1,5 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Autorisation reçue</title>
+<style>body{font-family:-apple-system,system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.5;color:#222}textarea{width:100%;height:120px;font-size:14px}button{font-size:16px;padding:8px 14px}</style></head>
+<body><h1>Autorisation reçue</h1><p>Copie l'adresse ci-dessous et colle-la dans le terminal (« Colle ici l'URL complète… »).</p>
+<textarea id="u" readonly></textarea><p><button onclick="navigator.clipboard.writeText(document.getElementById('u').value);this.textContent='Copié ✓'">Copier l'adresse</button></p>
+<script>document.getElementById('u').value=location.href;</script></body></html>
